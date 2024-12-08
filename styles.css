@@ -1,0 +1,80 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    color: #333;
+}
+
+/* Navigation */
+.navbar {
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+/* Hero Section */
+.hero-section {
+    height: 100vh;
+    background: url('https://images.unsplash.com/photo-1492691527719-9d1e07e534b4') no-repeat center center;
+    background-size: cover;
+    position: relative;
+    color: white;
+}
+
+.hero-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.5);
+}
+
+.hero-section .container {
+    position: relative;
+    z-index: 1;
+}
+
+/* Gallery Section */
+.gallery-img {
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+.gallery-img:hover {
+    transform: scale(1.05);
+}
+
+/* Card Styles */
+.card {
+    transition: transform 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card-img-top {
+    height: 250px;
+    object-fit: cover;
+}
+
+/* Project Detail Page */
+.project-hero {
+    margin-top: 56px; /* Height of the fixed navbar */
+}
+
+.project-hero img {
+    height: 70vh;
+    object-fit: cover;
+    object-position: center;
+}
+
+.project-content {
+    font-size: 1.1rem;
+    line-height: 1.8;
+}
+
+.project-details {
+    position: sticky;
+    top: 80px;
+} 
